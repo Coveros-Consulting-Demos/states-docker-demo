@@ -1,3 +1,0 @@
-HSET states PR 'Puerto Rico'
-HSET states DC 'District of Columbia'
-
