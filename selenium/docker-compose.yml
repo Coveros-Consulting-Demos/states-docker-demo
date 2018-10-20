@@ -2,7 +2,7 @@ version: '2'
 
 services:
   firefox:
-    image: selenium/node-firefox:3.14.0-dubnium
+    image: selenium/node-firefox:3.14.0-helium
     volumes:
       - /dev/shm:/dev/shm
     depends_on:
@@ -11,7 +11,7 @@ services:
       HUB_HOST: hub
 
   chrome:
-    image: selenium/node-chrome:3.14.0-dubnium
+    image: selenium/node-chrome:3.14.0-helium
     volumes:
       - /dev/shm:/dev/shm
     depends_on:
@@ -20,7 +20,7 @@ services:
       HUB_HOST: hub
 
   hub:
-    image: selenium/hub:3.14.0-dubnium
+    image: selenium/hub:3.14.0-helium
     ports:
       - "4444:4444"
 
